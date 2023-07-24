@@ -1,0 +1,9 @@
+#count {
+  text-align: right;
+  font-weight: bold;
+}
+
+#logo {
+  background-image: url('../assets/holberton-logo.jpg');
+  background-size: 200px 200px;
+}
