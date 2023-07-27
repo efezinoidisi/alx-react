@@ -10,7 +10,7 @@ let count = 0;
 
 function updateCounter() {
   count++;
-  $('#count').val(`${count} clicks on the button`);
+  $('#count').html(`${count} clicks on the button`);
 }
 
-$('button').on('click', _.debounce(updateCounter, 150));
+$('button').on('click', _.debounce(updateCounter, 500));
