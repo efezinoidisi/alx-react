@@ -1,0 +1,37 @@
+.Notifications {
+  border: 2px dotted var(--red-color);
+  padding: 1rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  float: right;
+  text-align: right;
+}
+
+.close-btn img {
+  width: 10%;
+}
+
+.Notifications p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.Notifications ul {
+  padding-top: 0.7rem;
+  padding-left: 3rem;
+}
+
+.Notifications li {
+  padding-bottom: 0.3rem;
+}
+
+[data-priority="default"] {
+  color: blue;
+}
+
+[data-priority="urgent"] {
+  color: var(--red-color);
+}
