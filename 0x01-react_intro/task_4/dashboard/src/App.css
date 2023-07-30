@@ -1,0 +1,54 @@
+:root {
+  --red-color: #c7254e;
+  --bg-color: #f9f2f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-image: url('./logo.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30% 100%;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  padding-left: 31%;
+  color: var(--red-color);
+}
+
+.App-body {
+  border-top: 3px solid var(--red-color);
+  border-bottom: 3px solid var(--red-color);
+  height: 60vh;
+  padding-top: 4rem;
+  padding-left: 3rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.App-footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-style: italic;
+}
+
+.App-body label {
+  padding-right: 0.4rem;
+}
+
+.App-body input {
+  margin-left: 0.2rem;
+}
+
+.App-body button {
+  border-radius: 5px;
+  outline: 0;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid gray;
+}
