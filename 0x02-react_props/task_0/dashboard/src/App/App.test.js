@@ -27,4 +27,4 @@ describe('App', () => {
 //     const wrapper = shallow(<App />);
 //     expect(wrapper.find('.App-footer')).toHaveLength(1);
 //   });
-});
+// });

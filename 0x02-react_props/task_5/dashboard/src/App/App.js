@@ -35,7 +35,7 @@ function App({ isLoggedIn }) {
 
   return (
     <>
-      <Notifications listNotifications={listCourses} />
+      <Notifications listNotifications={listNotifications} />
       <div className='App'>
         <Header />
         <div className='App-body'>
