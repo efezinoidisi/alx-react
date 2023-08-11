@@ -1,0 +1,24 @@
+.App-body {
+  border-top: 3px solid var(--red-color);
+  border-bottom: 3px solid var(--red-color);
+  height: 60vh;
+  padding-top: 4rem;
+  padding-left: 3rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.App-body label {
+  padding-right: 0.4rem;
+}
+
+.App-body input {
+  margin-left: 0.2rem;
+}
+
+.App-body button {
+  border-radius: 5px;
+  outline: 0;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid gray;
+}
