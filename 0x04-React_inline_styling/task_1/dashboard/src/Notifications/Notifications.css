@@ -1,0 +1,21 @@
+.Notifications p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.Notifications li {
+  padding-bottom: 0.3rem;
+}
+
+[data-notification-type="default"] {
+  color: blue;
+}
+
+[data-notification-type="urgent"] {
+    --red-color: #c7254e;
+  color: var(--red-color);
+}
+
+.menuItem {
+  text-align: right;
+}
