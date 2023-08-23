@@ -1,6 +1,6 @@
 const { fromJS } = require('immutable');
 
-function getImmutableObject(obj) {
+export default function getImmutableObject(obj) {
   const mapped = fromJS(obj);
   return mapped;
 }
