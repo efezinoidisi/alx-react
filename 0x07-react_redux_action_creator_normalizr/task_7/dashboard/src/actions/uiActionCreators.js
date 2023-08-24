@@ -37,6 +37,16 @@ export function loginFailure() {
   };
 }
 
+export const boundLogin = (email, password) => dispatch(login(email, password));
+
+export const boundLogout = () => dispatch(logout());
+
+export const boundDisplayNotificationDrawer = () =>
+  dispatch(displayNotificationDrawer());
+
+export const boundHideNotificationDrawer = () =>
+  dispatch(hideNotificationDrawer());
+
 export function loginRequest(email, password) {
   dispatch(boundLogin(email, password));
   const apiUrl = '../../dist/login-success.json';
@@ -44,10 +54,3 @@ export function loginRequest(email, password) {
     .then(() => dispatch(loginSuccess()))
     .catch(() => dispatch(loginFailure()));
 }
-
-export const boundLogin = (email, password) => dispatch(login(email, password));
-export const boundLogout = () => dispatch(logout());
-export const boundDisplayNotificationDrawer = () =>
-  dispatch(displayNotificationDrawer());
-export const boundHideNotificationDrawer = () =>
-  dispatch(hideNotificationDrawer());
