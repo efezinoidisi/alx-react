@@ -1,8 +1,8 @@
 import { Map } from 'immutable';
 import {
   FETCH_NOTIFICATIONS_SUCCESS,
-  SET_TYPE_FILTER,
   MARK_AS_READ,
+  SET_TYPE_FILTER,
 } from '../actions/notificationActionTypes';
 import { notificationsNormalizer } from '../schema/notifications';
 

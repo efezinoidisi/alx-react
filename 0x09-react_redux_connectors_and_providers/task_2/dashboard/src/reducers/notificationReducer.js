@@ -1,5 +1,9 @@
 import { Map } from 'immutable';
-import { FETCH_NOTIFICATIONS_SUCCESS } from '../actions/notificationActionTypes';
+import {
+  FETCH_NOTIFICATIONS_SUCCESS,
+  SET_TYPE_FILTER,
+  MARK_AS_READ,
+} from '../actions/notificationActionTypes';
 import { notificationsNormalizer } from '../schema/notifications';
 
 const initialNotifState = {
@@ -13,7 +17,7 @@ const notificationReducer = (state = Map(initialNotifState), action) => {
       const normalizedData = notificationsNormalizer(action.data);
 
       Object.keys(normalizedData.notifications).map((key) => {
-        normalizedData.notifications[key].isRead = false;
+        return (normalizedData.notifications[key].isRead = false);
       });
       return state.merge(normalizedData);
 
@@ -27,7 +31,7 @@ const notificationReducer = (state = Map(initialNotifState), action) => {
       return state.set('filter', action.filter);
 
     default:
-      state;
+      return state;
   }
 };
 export default notificationReducer;
